@@ -31,7 +31,7 @@ d = modinv(e, phi)
 
 print('P =', p)
 print('Q =', q)
-print('N =', n)
+print('N =', n) 
 print('Phi =', phi)
 print('E =', e)
 print('D =', d)
@@ -46,6 +46,5 @@ pk.write(private_key.export_key('PEM'))
 pk.close()
 
 # openssl rsautl -decrypt -in key.cipher -out key.txt -inkey pk.key
-# openssl aes-256-cbc -salt -a -d -in ciphertext.enc -out aes256.txt
 # openssl aes-256-cbc -md md5 -a -d -in ciphertext.enc -out message.txt
 
